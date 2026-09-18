@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Séchage solaire du bois et des récoltes, financé à 100 %</title>
+<meta name="description" content="Des panneaux solaires hybrides pour votre séchoir, zéro reste à charge. Vérifiez l'éligibilité de votre site en 20 secondes.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="Séchage solaire du bois et des récoltes, financé à 100 %">
+<meta property="og:description" content="Des panneaux solaires hybrides pour votre séchoir, zéro reste à charge. Vérifiez l'éligibilité de votre site en 20 secondes.">
+<meta property="og:image" content="https://zczbgw9v6c-dot.github.io/offres/og-sechage.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Hangar de séchage de bois avec panneaux solaires en toiture">
+<meta property="og:url" content="https://zczbgw9v6c-dot.github.io/offres/sechage.html">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#2A2219">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<script>if(location.protocol==='http:'&&!/^(localhost|127\.|192\.168\.)/.test(location.hostname))location.replace('https://'+location.host+location.pathname+location.search);</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+/* Univers gonflage : le bitume du parking, le jaune du marquage au sol, un manomètre d'atelier.
+   Univers séchage : l'écorce, le fil du bois, le jaune du soleil. */
+:root{
+  --fond:#1F2529; --fond-2:#2C343A; --sur-fond:#F2F4F3; --sur-fond-2:#A9B4B9;
+  --feuille:#F3F5F4; --carte:#FFFFFF; --encre:#1F2529; --encre-2:#55616A; --trait:#D5DBD8;
+  --accent:#F2C200; --accent-fonce:#7A6100; --lien:#1565A8; --valide:#1B8554;
+  --grain:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 .16 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  --titre:"Barlow Condensed","Avenir Next Condensed","HelveticaNeue-CondensedBold","Roboto Condensed",sans-serif-condensed,"Arial Narrow",Arial,sans-serif;
+  --texte:Barlow,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+}
+body[data-theme="sechage"]{
+  --fond:#2A2219; --fond-2:#3B3024; --sur-fond:#F6F1E7; --sur-fond-2:#C2B49E; --accent:#F4B400; --accent-fonce:#7A5600;
+  --grain:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.008 .28' numOctaves='3' seed='4'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 .9 0 0 0 0 .7 0 0 0 .22 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+*{box-sizing:border-box;margin:0}
+html{-webkit-text-size-adjust:100%}
+body{font-family:var(--texte);background:var(--fond);color:var(--encre);min-height:100vh;min-height:100dvh;
+  display:flex;justify-content:center;line-height:1.45;font-size:17px}
+.place{width:min(460px,100%);min-height:100dvh;display:flex;flex-direction:column;position:relative}
+
+/* ----- le haut : le sol du parking ----- */
+.haut{position:relative;padding:0 22px 104px;background-size:auto,cover;background-position:center;color:var(--sur-fond);
+  background:var(--grain),radial-gradient(120% 90% at 50% 38%,var(--fond-2),var(--fond) 70%)}
+.haut::before{content:"";display:block;position:relative;z-index:3;height:9px;margin:0 -22px 16px;
+  background:repeating-linear-gradient(-45deg,var(--accent) 0 14px,transparent 14px 28px)}
+body[data-theme="sechage"] .haut::before{background:var(--accent)}
+/* lignes blanches de la place de stationnement */
+body[data-theme="gonflage"] .haut::after{content:"";position:absolute;left:0;right:0;top:9px;bottom:0;pointer-events:none;
+  border-left:4px solid rgba(255,255,255,.75);border-right:4px solid rgba(255,255,255,.75)}
+.fond{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:var(--cadre,50% 62%);z-index:0}
+.voile{position:absolute;inset:0;z-index:1;pointer-events:none;
+  background:linear-gradient(to bottom,rgba(14,18,21,.86) 0,rgba(14,18,21,.7) 21%,rgba(14,18,21,.12) 46%,rgba(14,18,21,.12) 70%,rgba(14,18,21,.4) 100%)}
+.haut:not(.photo) .voile,.haut:not(.photo) .fond{display:none}
+.haut.photo::after{display:none!important}
+.haut.photo{padding-bottom:128px}
+.haut.photo .bonjour,.haut.photo .sceau{text-shadow:0 1px 8px rgba(0,0,0,.55)}
+.haut.photo .mano{filter:drop-shadow(0 16px 22px rgba(0,0,0,.6))}
+.sceau{position:relative;z-index:2;display:flex;align-items:center;gap:9px;font-size:14.5px;font-weight:500;color:var(--sur-fond)}
+.sceau svg{flex:none}
+.bonjour{position:relative;z-index:2;font-family:var(--titre);font-weight:600;font-size:clamp(25px,7vw,30px);line-height:1.1;margin-top:16px}
+.bonjour small{display:block;font-family:var(--texte);font-weight:400;font-size:15px;color:var(--sur-fond-2);margin-top:3px}
+
+.mano{position:relative;z-index:2;cursor:pointer;margin:14px auto 0;width:100%;max-width:208px;transition:max-width .5s cubic-bezier(.3,.9,.3,1);
+  filter:drop-shadow(0 14px 18px rgba(0,0,0,.45))}
+body[data-etape="q"] .mano{max-width:112px;margin-top:10px}
+body[data-etape="q"] .haut,body[data-etape="fin"] .haut{padding-bottom:90px}
+body[data-etape="q"] .haut.photo,body[data-etape="fin"] .haut.photo{padding-bottom:104px}
+body[data-etape="q"] .sceau,body[data-etape="fin"] .sceau{display:none}
+body[data-etape="q"] .bonjour,body[data-etape="fin"] .bonjour{margin-top:0;font-size:22px}
+body[data-etape="q"] .bas{position:static;background:none}
+body[data-etape="fin"] .mano{max-width:92px;margin-top:8px}
+body[data-etape="q"] .bonjour small,body[data-etape="fin"] .bonjour small{display:none}
+.mano svg{display:block;width:100%;height:auto}
+.mano.pschitt{animation:pschitt .45s ease}
+@keyframes pschitt{30%{transform:scale(1.045)}60%{transform:scale(.99)}}
+.decor{position:absolute;left:0;right:0;bottom:22px;height:120px;pointer-events:none;z-index:1}
+.decor svg{display:block;width:100%;height:100%}
+.retour{align-self:flex-start;display:flex;align-items:center;gap:6px;font-size:15.5px;font-weight:500;color:var(--encre-2);
+  padding:8px 12px 8px 6px;margin:-10px 0 8px -6px;border-radius:8px}
+.retour:active{background:#E3E8E5}
+.condition{margin-top:12px;font-size:15px;color:var(--encre-2);display:flex;gap:9px;align-items:flex-start;line-height:1.35}
+.condition svg{flex:none;margin-top:2px}
+/* écran de remerciement : fondu plein écran */
+.merci{position:fixed;inset:0;z-index:20;display:flex;justify-content:center;color:var(--sur-fond);opacity:0;animation:fondu .7s ease forwards;
+  background:var(--grain),radial-gradient(120% 80% at 50% 35%,var(--fond-2),var(--fond) 72%)}
+.merci-in{width:min(460px,100%);padding:0 30px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;min-height:100dvh}
+.merci .rond{width:112px;height:112px}
+.merci .rond circle{stroke-dasharray:302;stroke-dashoffset:302;animation:trace 1s .35s cubic-bezier(.6,0,.2,1) forwards}
+.merci .rond path{stroke-dasharray:70;stroke-dashoffset:70;animation:trace .5s 1.1s ease-out forwards}
+.merci h2{font-size:clamp(34px,9.5vw,42px);margin-top:26px;color:var(--sur-fond);opacity:0;animation:monte .6s 1.2s ease forwards}
+.merci p{margin-top:14px;font-size:18px;color:var(--sur-fond-2);opacity:0;animation:monte .6s 1.45s ease forwards}
+.merci p strong{color:var(--sur-fond);font-weight:600}
+.merci a{margin-top:30px;color:var(--sur-fond);text-decoration:none;font-weight:600;font-size:18px;border:1.5px solid rgba(255,255,255,.35);
+  border-radius:10px;padding:13px 22px;opacity:0;animation:monte .6s 1.7s ease forwards}
+.merci .sceau{margin-top:34px;opacity:0;animation:monte .6s 1.9s ease forwards;color:var(--sur-fond-2)}
+@keyframes fondu{to{opacity:1}}
+@keyframes trace{to{stroke-dashoffset:0}}
+@keyframes monte{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+#aiguille{transform-origin:150px 150px;transition:transform 1.1s cubic-bezier(.2,1.5,.35,1)}
+.lecture{font-family:var(--titre);font-weight:700;font-size:32px;fill:#1F2529}
+.unite{font-family:var(--texte);font-size:12px;fill:#55616A}
+.chiffre{font-family:var(--titre);font-weight:600;font-size:18px;fill:#55616A}
+
+/* ----- la feuille : ce que le client lit et touche ----- */
+.feuille{flex:1;display:flex;flex-direction:column;background:var(--feuille);border-radius:22px 22px 0 0;margin-top:-24px;
+  position:relative;z-index:5;padding:24px 22px calc(16px + env(safe-area-inset-bottom));box-shadow:0 -10px 30px rgba(0,0,0,.25)}
+.scene{flex:1;display:flex;flex-direction:column}
+.amorce{font-size:18px;font-weight:500;color:var(--encre);padding-left:13px;border-left:4px solid var(--accent);line-height:1.35}
+h1{font-family:var(--titre);font-weight:700;font-size:clamp(34px,9.6vw,44px);line-height:1;letter-spacing:-.005em;margin-top:16px}
+h2{font-family:var(--titre);font-weight:700;font-size:clamp(29px,8.2vw,36px);line-height:1.05}
+h1,h2{text-wrap:balance}
+h1:focus,h2:focus{outline:none}
+.chapo{margin-top:12px;color:var(--encre-2)}
+.chapo strong{color:var(--encre);font-weight:600}
+.pas{font-size:15px;color:var(--encre-2);margin-bottom:8px}
+.aide{margin-top:8px;color:var(--encre-2);font-size:16px}
+
+.bas{margin-top:auto;padding:22px 0 4px;display:flex;flex-direction:column;gap:10px;position:sticky;bottom:0;
+  background:linear-gradient(to bottom,rgba(243,245,244,0),var(--feuille) 22px)}
+button{font:inherit;color:inherit;cursor:pointer;border:0;background:none;-webkit-tap-highlight-color:transparent}
+.bas.libre{position:static;background:none}
+@media (max-height:700px){body[data-etape="accueil"] .mano{max-width:168px}}
+.btn{width:100%;min-height:62px;border-radius:10px;font-family:var(--titre);font-weight:700;font-size:24px;letter-spacing:.01em;padding:12px 18px}
+.btn:focus-visible,.lien:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid var(--lien);outline-offset:3px}
+.btn.plein{background:var(--accent);color:#1F2529;box-shadow:0 4px 0 var(--accent-fonce),0 12px 22px rgba(122,97,0,.22)}
+.btn.plein:active{box-shadow:0 1px 0 var(--accent-fonce);transform:translateY(3px)}
+.btn.choix{background:var(--carte);border:1.5px solid #B9C2BE;box-shadow:0 2px 0 #B9C2BE;text-align:left;font-size:22px}
+.btn.choix small{font-family:var(--texte);font-weight:400;font-size:14px;color:var(--encre-2);display:block;line-height:1.25;margin-top:2px}
+.btn.choix.choisi{background:var(--encre);border-color:var(--encre);color:#fff;box-shadow:none}.btn.choix.choisi small{color:#CFD6D3}
+.lien{color:var(--encre-2);text-decoration:underline;text-underline-offset:3px;font-size:16px;padding:12px;align-self:center}
+
+.faits{list-style:none;padding:0;margin-top:12px;background:var(--carte);border-radius:12px;border:1px solid var(--trait);overflow:hidden}
+.faits li{display:flex;gap:12px;align-items:baseline;padding:9px 14px;border-bottom:1px solid var(--trait)}
+.faits li:last-child{border-bottom:0}
+.faits b{font-family:var(--titre);font-weight:700;font-size:24px;min-width:82px;color:var(--valide)}
+.faits span{font-size:15px;line-height:1.35}
+.note{margin-top:12px;padding:12px 14px;background:var(--carte);border-left:5px solid var(--accent);border-radius:0 8px 8px 0;font-size:16px}
+
+.creneaux{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:16px}
+.creneaux .btn{min-height:54px;font-size:20px;text-align:center}
+label{display:block;font-size:15px;color:var(--encre-2);margin:14px 0 4px}
+input{width:100%;font:inherit;font-size:19px;padding:14px;border:1.5px solid #8C979C;border-radius:10px;background:#fff;color:var(--encre)}
+.erreur{color:#A3281C;font-size:15px;margin-top:6px;min-height:20px}
+.appel{display:block;text-align:center;text-decoration:none;color:var(--lien);font-weight:600;padding:10px;font-size:18px}
+footer{margin-top:18px;font-size:12.5px;line-height:1.4;color:var(--encre-2)}
+footer button{font-size:12.5px;text-decoration:underline;color:inherit;padding:0}
+
+.apercu{background:#fff;color:#1F2529;font-size:13px;padding:6px 12px;display:flex;gap:8px;align-items:center}
+.apercu select{min-width:0;flex:1}
+.apercu select{font:inherit;font-size:13px;padding:4px 6px;border:1px solid #8C979C;border-radius:6px;background:#fff}
+/* tablette et ordinateur : la page devient une carte centrée */
+@media (min-width:700px){
+  body{align-items:center;padding:32px 0;background:var(--grain),radial-gradient(90% 70% at 50% 30%,var(--fond-2),var(--fond) 75%)}
+  .place{min-height:0;height:min(860px,calc(100dvh - 64px));border-radius:26px;overflow:hidden auto;box-shadow:0 30px 80px rgba(0,0,0,.5)}
+  .merci{position:absolute;border-radius:26px}
+  .merci-in{min-height:100%}
+}
+.entre{animation:entre .35s ease both}
+@keyframes entre{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation-duration:.01s!important;animation-delay:0s!important}}
+
+/* ===== mise en page v3 : bandeau + photo, tout l'accueil tient sur un écran ===== */
+.haut,.haut.photo,body[data-etape="q"] .haut,body[data-etape="fin"] .haut,body[data-etape="q"] .haut.photo,body[data-etape="fin"] .haut.photo{padding:0}
+.haut::before{margin:0}
+.haut::after{display:none!important}
+.bandeau{position:relative;z-index:2;padding:12px 22px 13px}
+.haut.photo .bonjour,.haut.photo .sceau{text-shadow:none}
+.sceau{font-size:13.5px;gap:8px;color:var(--sur-fond-2)}
+.sceau svg{width:18px;height:18px}
+.bonjour{margin-top:7px;font-size:clamp(22px,6.3vw,26px);line-height:1.12;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.bonjour small{display:none}
+body[data-etape="q"] .bonjour,body[data-etape="fin"] .bonjour{font-size:20px;-webkit-line-clamp:1}
+.vue{position:relative;height:clamp(176px,calc(100dvh - var(--reste,404px) - var(--ruban,0px)),340px);padding-bottom:22px;display:flex;align-items:center;justify-content:center;overflow:hidden;transition:height .45s cubic-bezier(.3,.9,.3,1)}
+.voile{background:radial-gradient(closest-side at 50% 46%,rgba(14,18,21,.5),rgba(14,18,21,0) 100%),linear-gradient(to bottom,rgba(14,18,21,.2),rgba(14,18,21,.05) 40%,rgba(14,18,21,.3))}
+.mano,body[data-etape="q"] .mano,body[data-etape="fin"] .mano{margin:0}
+.mano{max-width:none;width:150px;transition:width .45s cubic-bezier(.3,.9,.3,1)}
+body[data-etape="q"] .vue{height:158px}  body[data-etape="q"] .mano{width:108px;max-width:none}
+body[data-etape="fin"] .vue{height:136px} body[data-etape="fin"] .mano{width:90px;max-width:none}
+.decor{bottom:22px;height:96px}
+.feuille{margin-top:-22px;padding-top:18px}
+.amorce{font-size:15.5px;line-height:1.35;padding-left:11px;border-left-width:3px}
+h1{font-size:clamp(27px,7.6vw,32px);line-height:1.04;margin-top:11px}
+.chapo{font-size:15px;line-height:1.4;margin-top:9px}
+.bas{padding:14px 0 2px}
+.btn.plein{min-height:58px;font-size:23px;line-height:1.05}
+.btn.plein small{display:block;font-family:var(--texte);font-weight:500;font-size:12.5px;letter-spacing:0;margin-top:3px;opacity:.8}
+footer{margin-top:26px}
+.intro{font-size:15.5px;font-weight:500;color:var(--encre);margin-bottom:10px;padding-left:11px;border-left:3px solid var(--accent)}
+body[data-theme="sechage"]{--reste:436px}
+@media (max-width:384px){ body{--reste:440px} body[data-theme="sechage"]{--reste:490px} }
+body.apercu{--ruban:37px}
+.mano{width:clamp(112px,calc((100dvh - var(--reste,404px) - var(--ruban,0px)) * .57),180px)}
+@media (max-height:600px){ .sceau{display:none} body{--reste:380px} body[data-theme="sechage"]{--reste:424px} }
+@media (min-width:700px){ .vue{height:300px} .mano{width:176px} }
+
+/* ===== v4 : plus de bandeau plein, le haut se fond dans la photo ===== */
+.haut{overflow:hidden}
+.flou{position:absolute;inset:-30px;width:calc(100% + 60px);height:calc(100% + 60px);object-fit:cover;object-position:50% 0;filter:blur(22px) brightness(.46) saturate(1.15);z-index:0}
+.haut:not(.photo) .flou{display:none}
+.haut.photo{background:var(--fond)}
+.bandeau{background:linear-gradient(to bottom,rgba(14,18,21,.42),rgba(14,18,21,.12))}
+.haut.photo .sceau{color:rgba(255,255,255,.82)}
+.haut.photo .bonjour{text-shadow:0 1px 10px rgba(0,0,0,.45)}
+.fond{-webkit-mask-image:linear-gradient(to bottom,transparent 0,#000 46px);mask-image:linear-gradient(to bottom,transparent 0,#000 46px)}
+body[data-etape="fin"] .vue{height:108px} body[data-etape="fin"] .mano{width:74px}
+body[data-etape="fin"] h2{font-size:clamp(25px,7vw,29px)}
+@media (max-height:660px){ body[data-etape="fin"] .vue{height:84px} body[data-etape="fin"] .mano{width:58px} }
+.faits{margin-top:10px}.faits li{padding:7px 14px}.faits b{font-size:22px;min-width:76px}.faits span{font-size:14.5px}
+body[data-theme="sechage"] .mano{width:clamp(108px,calc((100dvh - var(--reste,404px) - var(--ruban,0px)) * .5),160px)}
+
+/* ===== v5 : ni barre ni bandeau — la photo monte jusqu'en haut, le nom est posé dessus ===== */
+.haut::before{display:none!important}
+.haut.photo{background:#10151A}
+.bandeau{background:none;padding-top:16px;z-index:2}
+.reflet{position:absolute;left:0;right:0;top:0;bottom:-40px;overflow:hidden;z-index:-1;
+  -webkit-mask-image:linear-gradient(to bottom,#000 calc(100% - 40px),transparent 100%);mask-image:linear-gradient(to bottom,#000 calc(100% - 40px),transparent 100%)}
+.reflet::after{content:"";position:absolute;inset:0;background:linear-gradient(to bottom,rgba(8,12,16,.5),rgba(8,12,16,.12))}
+.flou{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 0;filter:blur(9px) brightness(.86) saturate(1.08);transform:scaleY(-1) scale(1.12);transform-origin:50% 50%;z-index:0}
+.fond{-webkit-mask-image:none;mask-image:none}
+.haut.photo .sceau{color:#fff;text-shadow:0 1px 8px rgba(0,0,0,.6)}
+.haut.photo .bonjour{text-shadow:0 1px 3px rgba(0,0,0,.55),0 2px 14px rgba(0,0,0,.5)}
+.voile{background:radial-gradient(closest-side at 50% 46%,rgba(14,18,21,.45),rgba(14,18,21,0) 100%),linear-gradient(to bottom,rgba(14,18,21,0),rgba(14,18,21,.04) 50%,rgba(14,18,21,.28))}
+</style>
+</head>
+<body data-etape="accueil" data-theme="sechage">
+<main class="place">
+  <div id="apercu"></div>
+  <header class="haut">
+    <div class="bandeau">
+    <div class="reflet" aria-hidden="true"><img class="flou" id="flou" alt="" decoding="async"></div>
+    <div class="sceau">
+      <svg width="22" height="22" viewBox="0 0 22 22" aria-hidden="true"><circle cx="11" cy="11" r="10" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M6.2 11.4l3.1 3.1 6.4-6.8" fill="none" stroke="var(--accent)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span>Partenaire des certificats d'économies d'énergie</span>
+    </div>
+    <p class="bonjour" id="bonjour"></p>
+    </div>
+    <div class="vue">
+    <img class="fond" id="photo" alt="" decoding="async" fetchpriority="high" width="920" height="771">
+    <div class="voile"></div>
+    <div class="mano" id="mano" aria-hidden="true">
+      <svg viewBox="0 0 300 300">
+        <defs>
+          <linearGradient id="lunette" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F4F6F6"/><stop offset=".45" stop-color="#8E999E"/><stop offset=".55" stop-color="#5D686E"/><stop offset="1" stop-color="#D9DFE0"/></linearGradient>
+          <radialGradient id="face" cx=".5" cy=".38" r=".75"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#E4E8E6"/></radialGradient>
+        </defs>
+        <circle cx="150" cy="150" r="147" fill="url(#lunette)"/>
+        <circle cx="150" cy="150" r="136" fill="#1F2529"/>
+        <circle cx="150" cy="150" r="132" fill="url(#face)"/>
+        <g id="cadran"></g>
+        <g id="aiguille"><path d="M150 150 L145.5 136 L150 42 L154.5 136 Z" fill="#1F2529"/><circle cx="150" cy="150" r="12" fill="#1F2529"/><circle cx="150" cy="150" r="4.5" fill="var(--accent)"/></g>
+        <text id="lecture" class="lecture" x="150" y="224" text-anchor="middle"></text>
+        <text id="unite" class="unite" x="150" y="243" text-anchor="middle"></text>
+        <path d="M58 92 A110 110 0 0 1 150 40" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round" opacity=".55"/>
+      </svg>
+    </div>
+    <div class="decor" id="decor" aria-hidden="true"></div>
+    </div>
+  </header>
+
+  <section class="feuille">
+    <div class="scene" id="scene" aria-live="polite"></div>
+    <footer id="pied"></footer>
+  </section>
+</main>
+
+<script>
+/* =====================  RÉGLAGES — tout ce qui se change est ici  ===================== */
+const REGLAGES = {
+  contact    : 'Vincent',             // celui qui rappelle
+  telephone  : '+33652111731',
+  telAffiche : '06 52 11 17 31',
+  signature  : "un partenaire des certificats d'économies d'énergie",
+  // envoi des réponses : 'table' = écriture directe (clé publique, ajout seul) ; 'fonction' = passe par la fonction serveur, aucune clé dans la page
+  envoi      : 'table',
+  fonction   : 'https://zsdozcqilsnwdrnjetbr.supabase.co/functions/v1/campagne-retour',
+  serveur    : 'https://zsdozcqilsnwdrnjetbr.supabase.co',
+  cle        : 'sb_publishable_PX-wR4B5kjMvi-VAnfCY2w_B0ocvwL0',
+  table      : 'campagne_retours'
+};
+
+const METIERS = {concession:'Concession automobile',industrie:'Scierie, site industriel',garage:'Garage',autoecole:'Auto-école',lavage:'Centre de lavage',commerce:'Commerce avec parking',hotel:'Hôtel',camping:'Camping',mairie:'Mairie',scierie:'Scierie',agricole:'Exploitation agricole',defaut:'Autre'};
+
+const CAMPAGNES = {
+  gonflage: {
+    code:'TRA-SE-104', nom:'Station de gonflage', metiers:['lavage','garage','concession','autoecole','commerce','hotel','camping','industrie','defaut'],
+    titre:"Une station de gonflage sur votre parking, financée à 100 %.",
+    chapo:"<strong>Zéro reste à charge pour vous.</strong> Le matériel, la pose et la mise en service sont pris en charge par les certificats d'économies d'énergie.",
+    amorces:{
+      garage:"Vos clients vous demandent-ils où regonfler leurs pneus ?",
+      autoecole:"Vos élèves apprennent à contrôler la pression des pneus. Et s'ils le faisaient devant chez vous ?",
+      lavage:"Vos clients lavent leur voiture chez vous. Et la pression des pneus, ils la font où ?",
+      commerce:"Des centaines de voitures passent sur votre parking. Combien roulent sous-gonflées ?",
+      hotel:"Vos clients reprennent la route demain. Leurs pneus sont-ils à la bonne pression ?",
+      camping:"Voitures, vélos, remorques : où vos vacanciers regonflent-ils ?",
+      industrie:"Clients, transporteurs, visiteurs : ils passent chaque jour sur votre site. Où contrôlent-ils la pression de leurs pneus ?",
+      concession:"Vos clients viennent essayer, acheter, faire réviser. Offrez-leur aussi la bonne pression.",
+      defaut:"Êtes-vous équipé d'une station de gonflage pour vos visiteurs ?"
+    },
+    mano:{min:0,max:3.5,pas:.5,gros:1,zone:[2,2.6],unite:'bar',dec:1,valeurs:[.3,1,1.7,2.3],recul:.25},
+    questions:[
+      {q:"Votre site reçoit-il du public ?",aide:"Clients, visiteurs, usagers : toute personne extérieure à l'entreprise.",
+       cond:"Un site fermé au public n'est pas éligible : la station doit être accessible à tous.",
+       rep:[{t:'Oui',ok:1},{t:'Non',ok:0}]},
+      {q:"Une voiture peut-elle manœuvrer près de l'emplacement ?",aide:"Un parking ou une aire où l'on s'arrête deux minutes sans gêner.",
+       cond:"Sans place pour s'arrêter et repartir, la station ne peut pas être posée.",
+       rep:[{t:'Oui',ok:1},{t:'Non',ok:0}]},
+      {q:"Y a-t-il du courant à proximité ?",aide:"Une simple alimentation électrique suffit, comme pour un éclairage extérieur.",
+       cond:"Sans aucune alimentation électrique sur le site, la station ne peut pas fonctionner.",
+       rep:[{t:'Oui',ok:1},{t:'Je ne sais pas',s:'Nous le vérifions pour vous',ok:1},{t:'Non',ok:0}]}
+    ],
+    faits:[['100 %','Financée : zéro reste à charge, matériel et pose compris.'],['5 jours',"Pour la pose après votre accord. Aucune visite technique préalable n'est nécessaire."],['Gratuite','Un service gratuit pour vos utilisateurs, en libre-service.'],['Offert','Le contrat de maintenance de votre station, sans frais pour vous.']]
+  },
+  sechage: {
+    code:'AGRI-EQ-110', nom:'Séchage solaire', metiers:['scierie','agricole'],
+    titre:"Séchez grâce au soleil : une installation financée à 100 %.",
+    chapo:"<strong>Zéro reste à charge pour vous.</strong> Des panneaux solaires hybrides insufflent de l'air chaud dans votre séchoir : matériel et pose pris en charge par les certificats d'économies d'énergie.",
+    amorces:{
+      scierie:"Combien vous coûte le séchage de votre bois chaque année ? Un bois sec plus tôt, c'est un bois vendu plus tôt.",
+      agricole:"Combien vous coûte le séchage de vos récoltes chaque année ? Une récolte sèche plus tôt, c'est une récolte vendue plus tôt.",
+      defaut:"Combien vous coûte le séchage chaque année ? Une production sèche plus tôt, c'est une production vendue plus tôt."
+    },
+    mano:{min:0,max:70,pas:10,gros:20,zone:[10,20],unite:"% d'humidité",dec:0,valeurs:[60,45,30,15],recul:5},
+    questions:[
+      {q:"Séchez-vous du bois ou des récoltes sur votre propre site ?",aide:"Bois d'œuvre, bois de chauffage, plaquettes, foin, céréales, plantes…",
+       cond:"Si vous achetez déjà sec, vous n'êtes pas éligible : l'aide finance uniquement une activité de séchage.",
+       rep:[{t:'Oui',ok:1},{t:"Non, j'achète déjà sec",ok:0,fin:"Cette aide finance uniquement les sites qui sèchent eux-mêmes leur bois ou leurs récoltes. Inutile d'aller plus loin : nous ne vous dérangerons pas pour rien."}]},
+      {q:"Comment est votre bâtiment de séchage ?",aide:"Indiquez simplement votre situation, le technicien regardera sur place.",
+       cond:"La fiche demande un bâtiment fermé sur ses quatre côtés.",
+       rep:[{t:'Fermé, quatre murs',ok:1},{t:'Il manque une façade',ok:1,verif:1},{t:'Bâtiment ouvert',ok:1,verif:1}]},
+      {q:"Quelle surface de toiture ou de terrain est disponible ?",aide:"Un ordre de grandeur suffit, le technicien mesurera.",
+       rep:[{t:'Moins de 300 m²',ok:1},{t:'300 à 800 m²',ok:1},{t:'Plus de 800 m²',ok:1}]}
+    ],
+    faits:[['100 %','Financée : zéro reste à charge, matériel et pose compris.'],['48 h',"Après votre demande, un technicien se déplace sur votre site pour réaliser la visite technique."],['15 jours','Au plus entre la visite et la pose, par des installateurs qualifiés QualiPV.'],['1 fois / an','Nettoyage des panneaux inclus.']]
+  }
+};
+
+/* ---------- décors : chaque métier retrouve son site, avec la station déjà posée ---------- */
+const DECORS = (() => {
+  const F='rgba(255,255,255,.10)', MI='rgba(255,255,255,.22)', L='rgba(255,255,255,.46)', N='rgba(0,0,0,.32)';
+  const sol = (places) => `<rect x="0" y="104" width="460" height="16" fill="rgba(0,0,0,.28)"/><line x1="0" y1="104" x2="460" y2="104" stroke="${L}" stroke-width="1.5"/>`+(places||[]).map(x=>`<line x1="${x}" y1="106" x2="${x-8}" y2="120" stroke="${L}" stroke-width="2"/>`).join('');
+  const voiture = (x,c) => `<g transform="translate(${x} 77)" fill="${c||MI}"><path d="M0 20q0-7 8-8l9-9q3-3 8-3h20q5 0 8 3l9 9q9 1 9 8v3h-7a7 7 0 0 0-14 0H29a7 7 0 0 0-14 0H0z"/><circle cx="22" cy="23" r="5"/><circle cx="58" cy="23" r="5"/></g>`;
+  const borne = x => `<g transform="translate(${x} 58)"><rect width="18" height="46" rx="3" fill="var(--accent)"/><rect x="3.5" y="5" width="11" height="9" rx="1.5" fill="#1F2529"/><circle cx="9" cy="24" r="3" fill="#1F2529"/><path d="M18 28c13 0 13 17 3 18" fill="none" stroke="var(--accent)" stroke-width="2.2" stroke-linecap="round"/></g>`;
+  const palmier = (x,h) => `<g transform="translate(${x} 104) scale(${h||1})" stroke="${MI}" fill="none" stroke-linecap="round"><path d="M0 0c2-20 0-38 4-56" stroke-width="4"/><path d="M4-56c-10-8-22-6-28 2M4-56c-4-12-16-16-24-12M4-56c6-12 18-14 26-8M4-56c12-6 24-2 28 8M4-56c2-10 0-16-4-22" stroke-width="3"/></g>`;
+  const lampe = x => `<path d="M${x} 104V44h14" fill="none" stroke="${MI}" stroke-width="2.5"/><rect x="${x+10}" y="44" width="10" height="4" fill="${L}"/>`;
+  const fenetres = (x,y,col,lig,w,h,dx,dy) => { let o=''; for(let i=0;i<col;i++)for(let j=0;j<lig;j++)o+=`<rect x="${x+i*dx}" y="${y+j*dy}" width="${w}" height="${h}" fill="${MI}"/>`; return o; };
+  const soleil = `<circle cx="418" cy="26" r="26" fill="var(--accent)" opacity=".16"/><circle cx="418" cy="26" r="13" fill="var(--accent)"/>`;
+  const panneaux = (x1,y1,x2,y2) => `<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" stroke="var(--accent)" stroke-width="7" stroke-dasharray="17 3"/>`;
+  const fin = `${borne(318)}${voiture(352)}`;
+  return {
+    garage: () => sol([300,350,440])+`<rect x="12" y="40" width="186" height="64" fill="${F}"/><rect x="12" y="30" width="186" height="13" fill="${MI}"/><rect x="24" y="56" width="80" height="48" fill="${N}"/>${voiture(28,L)}<rect x="24" y="92" width="80" height="3" fill="${L}"/><rect x="116" y="56" width="70" height="48" fill="${F}"/>${[62,70,78,86,94].map(y=>`<line x1="116" y1="${y}" x2="186" y2="${y}" stroke="${MI}"/>`).join('')}${[0,1,2].map(i=>`<ellipse cx="222" cy="${99-i*9}" rx="14" ry="5" fill="none" stroke="${L}" stroke-width="3"/>`).join('')}`+fin,
+    autoecole: () => sol([300,350,440])+`<rect x="12" y="50" width="120" height="54" fill="${F}"/><rect x="12" y="42" width="120" height="11" fill="${MI}"/><rect x="26" y="66" width="22" height="38" fill="${N}"/><rect x="60" y="66" width="58" height="22" fill="${MI}"/>${voiture(160,L)}<rect x="184" y="69" width="24" height="9" rx="2" fill="var(--accent)"/>${[252,272,292].map(x=>`<path d="M${x} 104l6-20 6 20z" fill="${L}"/>`).join('')}`+fin,
+    lavage: () => sol([300,350,440])+`<rect x="20" y="26" width="132" height="11" fill="${MI}"/><rect x="24" y="37" width="10" height="67" fill="${MI}"/><rect x="138" y="37" width="10" height="67" fill="${MI}"/><rect x="40" y="44" width="11" height="58" rx="5" fill="${L}"/><rect x="121" y="44" width="11" height="58" rx="5" fill="${L}"/>${voiture(51,F)}${[[66,50],[86,44],[104,52],[76,62],[96,64]].map(p=>`<path d="M${p[0]} ${p[1]}q4 6 0 9q-4-3 0-9z" fill="${L}"/>`).join('')}<rect x="170" y="52" width="86" height="52" fill="${F}"/><rect x="170" y="44" width="86" height="10" fill="${MI}"/><circle cx="196" cy="78" r="9" fill="none" stroke="${L}" stroke-width="3"/><path d="M205 78c18 0 8 26 24 26" fill="none" stroke="${L}" stroke-width="3"/>`+fin,
+    commerce: () => sol([282,366,450])+`<rect x="0" y="42" width="248" height="62" fill="${F}"/><rect x="22" y="28" width="130" height="18" fill="${MI}"/>${[...Array(12)].map((_,i)=>`<rect x="${4+i*20}" y="58" width="10" height="8" fill="${MI}"/>`).join('')}<rect x="96" y="72" width="44" height="32" fill="${N}"/><line x1="118" y1="72" x2="118" y2="104" stroke="${L}"/>${[170,186,202].map(x=>`<path d="M${x} 90h12l-2 9h-8zM${x+2} 102h0M${x+9} 102h0" fill="none" stroke="${L}" stroke-width="2" stroke-linecap="round"/>`).join('')}${lampe(262)}${borne(296)}${voiture(322)}${voiture(386,F)}`,
+    hotel: () => sol([300,350,440])+`<rect x="18" y="2" width="128" height="102" fill="${F}"/>${fenetres(30,12,4,4,16,12,28,20)}<rect x="62" y="88" width="40" height="16" fill="${N}"/><rect x="50" y="82" width="64" height="6" fill="${L}"/>${palmier(178)}${palmier(214,.8)}${fin}${palmier(446,.9)}`,
+    camping: () => sol([])+`<path d="M12 104l48-54 48 54z" fill="${F}"/><path d="M60 50l-14 54h28z" fill="${N}"/><rect x="124" y="58" width="96" height="40" rx="12" fill="${MI}"/><rect x="138" y="66" width="30" height="14" rx="3" fill="${N}"/><rect x="182" y="66" width="18" height="32" rx="3" fill="${N}"/><circle cx="160" cy="100" r="7" fill="${L}"/><line x1="220" y1="92" x2="236" y2="92" stroke="${L}" stroke-width="3"/>${palmier(262)}<g fill="none" stroke="${L}" stroke-width="2.5"><circle cx="288" cy="95" r="9"/><circle cx="312" cy="95" r="9"/><path d="M288 95l9-14h12l3 14M297 81l6 14"/></g>${borne(336)}${voiture(366)}`,
+    mairie: () => sol([300,350,440])+`<rect x="20" y="52" width="176" height="52" fill="${F}"/><path d="M12 52l96-32 96 32z" fill="${MI}"/><circle cx="108" cy="40" r="7" fill="${N}" stroke="${L}" stroke-width="1.5"/>${[34,62,90,118,146,174].map(x=>`<rect x="${x}" y="56" width="8" height="42" fill="${MI}"/>`).join('')}<rect x="98" y="72" width="20" height="26" fill="${N}"/><rect x="12" y="98" width="192" height="6" fill="${L}"/><line x1="226" y1="104" x2="226" y2="30" stroke="${L}" stroke-width="2.5"/><path d="M227 32h26l-5 8 5 8h-26z" fill="${MI}"/>`+fin,
+    defaut: () => sol([300,350,440])+`<rect x="14" y="36" width="170" height="68" fill="${F}"/>${fenetres(28,48,5,2,18,12,30,22)}<rect x="84" y="84" width="30" height="20" fill="${N}"/>${lampe(214)}`+fin,
+    scierie: () => `${soleil}<rect x="0" y="104" width="460" height="16" fill="rgba(0,0,0,.28)"/><line x1="0" y1="104" x2="460" y2="104" stroke="${L}" stroke-width="1.5"/><rect x="16" y="58" width="190" height="46" fill="${F}"/><path d="M6 58l105-34 105 34z" fill="${MI}"/>${panneaux(122,29,208,57)}<rect x="40" y="70" width="70" height="34" fill="${N}"/>${[0,1,2,3].map(j=>[0,1,2,3,4].map(i=>`<rect x="${46+i*12}" y="${96-j*7}" width="10" height="5" fill="${L}"/>`).join('')).join('')}${[0,1,2,3,4].map(j=>`<rect x="232" y="${96-j*10}" width="92" height="7" fill="${MI}"/>`+[240,276,312].map(x=>`<rect x="${x}" y="${93-j*10}" width="5" height="3" fill="${L}"/>`).join('')).join('')}${[[352,94],[372,94],[392,94],[412,94],[362,77],[382,77],[402,77],[372,60],[392,60]].map(c=>`<circle cx="${c[0]}" cy="${c[1]}" r="9.5" fill="${MI}" stroke="${L}" stroke-width="1.5"/><circle cx="${c[0]}" cy="${c[1]}" r="4" fill="none" stroke="${L}"/>`).join('')}`,
+    agricole: () => `${soleil}<path d="M230 104c50-26 150-30 230-10v10z" fill="${F}"/><rect x="0" y="104" width="460" height="16" fill="rgba(0,0,0,.28)"/><line x1="0" y1="104" x2="460" y2="104" stroke="${L}" stroke-width="1.5"/>${[0,1,2,3,4].map(i=>`<path d="M${300+i*34} 120c-10-10-16-16-${20+i*4}-24" fill="none" stroke="${MI}" stroke-width="1.5"/>`).join('')}<rect x="16" y="60" width="160" height="44" fill="${F}"/><path d="M6 60l90-32 90 32z" fill="${MI}"/>${panneaux(106,32,178,58)}<rect x="66" y="70" width="60" height="34" fill="${N}"/><path d="M66 70l60 34M126 70l-60 34" stroke="${L}" stroke-width="1.5"/><rect x="194" y="36" width="30" height="68" fill="${MI}"/><path d="M194 36a15 12 0 0 1 30 0z" fill="${L}"/>${[254,288].map(x=>`<circle cx="${x}" cy="90" r="14" fill="${MI}" stroke="${L}" stroke-width="1.5"/><path d="M${x} 90m-8 0a8 8 0 1 0 8-8" fill="none" stroke="${L}" stroke-width="1.5"/>`).join('')}`
+  };
+})();
+const PHOTOS = {
+  gonflage:{
+    lavage:{f:'lavage',cadre:'60% 30%',alt:"Centre de lavage automobile avec une station de gonflage des pneus en libre-service"},
+    garage:{f:'garage',cadre:'60% 30%',alt:"Centre auto avec atelier ouvert et station de gonflage des pneus devant l'entrée"},
+    concession:{f:'concession',cadre:'60% 30%',alt:"Concession automobile avec une station de gonflage des pneus sur le parking client"},
+    autoecole:{f:'autoecole',cadre:'50% 30%',alt:"Auto-école et ses voitures d'apprentissage, avec une station de gonflage sur le parking"},
+    commerce:{f:'commerce',cadre:'60% 30%',alt:"Supérette avec parking client équipé d'une station de gonflage des pneus"},
+    hotel:{f:'hotel',cadre:'60% 30%',alt:"Entrée d'un hôtel avec une station de gonflage des pneus à disposition des clients"},
+    camping:{f:'camping',cadre:'50% 62%',alt:"Camping en bord de mer avec caravane, vélos et station de gonflage"},
+    industrie:{f:'industrie',cadre:'50% 45%',alt:"Scierie avec piles de bois et station de gonflage à l'entrée du site"},
+    defaut:{f:'autre',cadre:'60% 30%',alt:"Parking d'un immeuble de bureaux équipé d'une station de gonflage des pneus"}
+  },
+  sechage:{
+    scierie:{f:'scierie',cadre:'40% 58%',alt:"Hangar de séchage de bois avec panneaux solaires en toiture et gaines d'air chaud, grumes au premier plan"},
+    agricole:{f:'agricole',cadre:'40% 58%',alt:"Séchoir agricole avec panneaux solaires en toiture, claies de vanille, cacao et céréales"},
+    defaut:{f:'scierie',cadre:'40% 58%',alt:"Hangar de séchage avec panneaux solaires en toiture"}
+  }
+};
+function decor(){
+  const h = document.querySelector('.haut'), ph = (PHOTOS[NOMC]||{})[SEG], im = $('photo');
+  h.classList.toggle('photo', !!ph);
+  if(ph){ im.style.setProperty('--cadre', ph.cadre); im.alt = ph.alt; const src = (window.IMG && window.IMG[ph.f]) || ph.f+'.webp'; if(im.getAttribute('src')!==src){ im.src = src; $('flou').src = src; } }
+  else { im.removeAttribute('src'); $('flou').removeAttribute('src'); im.alt = ''; }
+  const d = DECORS[SEG] || (NOMC==='sechage' ? DECORS.scierie : DECORS.defaut);
+  $('decor').innerHTML = ph ? '' : `<svg viewBox="0 0 460 120" preserveAspectRatio="xMidYMax meet">${d()}</svg>`;
+}
+/* ===================================================================================== */
+
+const P = new URLSearchParams(location.search);
+const REF = (P.get('r')||'').slice(0,40);
+const FROID = P.has('froid');                 // prospect inconnu : on lui demande société + numéro
+const APERCU = !REF && !FROID;                // fichier ouvert sans lien DomBase : démonstration, rien n'est envoyé
+const DEMO = P.has('demo') || APERCU;
+const NOMC = 'sechage';
+let SEG = (P.get('t')||(APERCU?CAMPAGNES[NOMC].metiers[0]:'defaut')).slice(0,20);
+let CLIENT = {nom:'',ville:''};
+try{ if(P.get('n')){ const b=P.get('n').replace(/-/g,'+').replace(/_/g,'/'); const o=new TextDecoder().decode(Uint8Array.from(atob(b),c=>c.charCodeAt(0))).split('|'); CLIENT={nom:(o[0]||'').slice(0,60),ville:(o[1]||'').slice(0,40)}; } }catch(e){}
+const CONNU = REF || APERCU;
+const esc = s => String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])).replace(/ ([?!:;])/g,'\u00A0$1');
+const $ = id => document.getElementById(id);
+let C, M, reponses = [], valeur;
+
+/* ---------- manomètre ---------- */
+const A0=-120, A1=120;
+const angle = v => A0 + (Math.min(M.max,Math.max(M.min,v))-M.min)/(M.max-M.min)*(A1-A0);
+const pt = (a,r) => { const t=(a-90)*Math.PI/180; return [150+r*Math.cos(t),150+r*Math.sin(t)]; };
+const arc = (a,b,r) => { const [x1,y1]=pt(a,r),[x2,y2]=pt(b,r); return `M${x1} ${y1} A${r} ${r} 0 ${b-a>180?1:0} 1 ${x2} ${y2}`; };
+function cadran(){
+  let h = `<path d="${arc(A0,A1,112)}" fill="none" stroke="#CDD4D1" stroke-width="12"/>`;
+  h += `<path d="${arc(angle(M.zone[0]),angle(M.zone[1]),112)}" fill="none" stroke="#1B8554" stroke-width="12"/>`;
+  for(let v=M.min; v<=M.max+1e-9; v+=M.pas){
+    const gros = Math.abs(v/M.gros-Math.round(v/M.gros))<1e-9, a=angle(v);
+    const [x1,y1]=pt(a,gros?92:98),[x2,y2]=pt(a,106);
+    h += `<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" stroke="#1F2529" stroke-width="${gros?3:1.5}"/>`;
+    if(gros){ const [tx,ty]=pt(a,76); h += `<text class="chiffre" x="${tx}" y="${ty+6}" text-anchor="middle">${v}</text>`; }
+  }
+  $('cadran').innerHTML = h;
+}
+function regler(v){ valeur=v; $('aiguille').style.transform=`rotate(${angle(v)}deg)`; $('lecture').textContent=v.toFixed(M.dec).replace('.',','); $('unite').textContent=M.unite; }
+
+/* ---------- envoi vers DomBase ---------- */
+async function envoyer(statut, plus){
+  if(DEMO) return true;
+  const ligne = Object.assign({campagne:NOMC, ref:REF||null, statut, segment:SEG, reponses:reponses.length?reponses:null}, plus||{});
+  const parFonction = REGLAGES.envoi === 'fonction';
+  const r = await fetch(parFonction ? REGLAGES.fonction : REGLAGES.serveur+'/rest/v1/'+REGLAGES.table, {method:'POST', keepalive:true,
+    headers: parFonction ? {'Content-Type':'application/json'}
+                         : {'apikey':REGLAGES.cle,'Authorization':'Bearer '+REGLAGES.cle,'Content-Type':'application/json','Prefer':'return=minimal'},
+    body:JSON.stringify(ligne)});
+  if(!r.ok) throw new Error('HTTP '+r.status);
+  return true;
+}
+// mesure d'audience maison, sans cookie ni outil tiers : à quelle étape chaque visiteur s'arrête
+const etapesVues = {};
+function suivre(etape){ if(etapesVues[etape]) return; etapesVues[etape]=1; envoyer('etape',{etape}).catch(()=>{}); }
+function signalerOuverture(){
+  try{ if(sessionStorage.getItem('vu:'+NOMC+REF)) return; sessionStorage.setItem('vu:'+NOMC+REF,'1'); }catch(e){}
+  envoyer('ouvert').catch(()=>{});
+}
+
+/* ---------- écrans ---------- */
+function montrer(etape, html){ document.body.dataset.etape=etape; const s=$('scene'); s.innerHTML=`<div class="entre" style="display:flex;flex-direction:column;flex:1">${html}</div>`; window.scrollTo(0,0); const t=s.querySelector('h1,h2'); if(t){t.tabIndex=-1;t.focus({preventScroll:true});} }
+
+const RETOUR = `<button class="retour" id="retour"><svg width="9" height="15" viewBox="0 0 9 15" aria-hidden="true"><path d="M7.5 1.5l-6 6 6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Retour</button>`;
+const ICONE_COND = `<svg width="17" height="17" viewBox="0 0 17 17" aria-hidden="true"><circle cx="8.5" cy="8.5" r="7.5" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M8.5 4.6v4.6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><circle cx="8.5" cy="12" r="1.1" fill="currentColor"/></svg>`;
+// position de l'aiguille d'après les réponses déjà données (sert aussi quand on revient en arrière)
+function niveau(){ const sens = M.valeurs[1]>M.valeurs[0]?-1:1; let v=M.valeurs[0]; reponses.forEach((r,j)=>{ v = r.ok ? M.valeurs[j+1] : v + sens*M.recul; }); return v; }
+
+function accueil(){
+  reponses = [];
+  $('bonjour').innerHTML = CLIENT.nom ? `Bonjour ${esc(CLIENT.nom)},${CLIENT.ville?`<small>${esc(CLIENT.ville)}</small>`:''}` : 'Bonjour,';
+  if(CLIENT.nom && !APERCU) document.title = CLIENT.nom+' : une aide réservée';
+  montrer('accueil', `
+    <p class="amorce">${esc(C.amorces[SEG] || C.amorces.defaut)}</p>
+    <h1>${esc(C.titre)}</h1>
+    <p class="chapo">${C.chapo}</p>
+    <div class="bas"><button class="btn plein" id="go">Demander mon installation<small>3 questions, 30 secondes</small></button></div>`);
+  $('go').onclick = () => question(0);
+  regler(M.valeurs[0]);
+}
+
+function question(i){
+  const Q = C.questions[i];
+  suivre('q'+(i+1));
+  reponses.length = i;                       // on efface la réponse à cette question et les suivantes
+  regler(niveau());
+  montrer('q', `${RETOUR}
+    ${i===0?`<p class="intro">Pour procéder à votre installation, répondez à ces ${C.questions.length} questions.</p>`:''}
+    <p class="pas">Question ${i+1} sur ${C.questions.length}</p>
+    <h2>${esc(Q.q)}</h2>
+    <p class="aide">${esc(Q.aide)}</p>
+    ${Q.cond?`<p class="condition">${ICONE_COND}<span>${esc(Q.cond)}</span></p>`:''}
+    <div class="bas">${Q.rep.map((r,k)=>`<button class="btn choix" data-k="${k}">${esc(r.t)}${r.s?`<small>${esc(r.s)}</small>`:''}</button>`).join('')}</div>`);
+  $('retour').onclick = () => i>0 ? question(i-1) : accueil();
+  let pris = false;
+  $('scene').querySelectorAll('[data-k]').forEach(b => b.onclick = () => {
+    if(pris) return; pris = true;
+    const r = Q.rep[+b.dataset.k];
+    b.classList.add('choisi');
+    reponses[i] = {q:Q.q, r:r.t, ok:!!r.ok, verif:!!r.verif};
+    regler(niveau());
+    setTimeout(() => r.fin ? nonEligible(i, r.fin) : (i+1<C.questions.length ? question(i+1) : resultat()), 650);
+  });
+}
+
+function nonEligible(i, texte){
+  envoyer('non_eligible').catch(()=>{});
+  montrer('fin', `${RETOUR}
+    <h2>Cette aide ne concerne pas votre site.</h2>
+    <p class="chapo">${esc(texte)}</p>
+    <p class="aide">Vous vous êtes trompé de réponse ? Revenez en arrière.</p>`);
+  $('retour').onclick = () => question(i);
+}
+
+function resultat(){
+  const ok = reponses.every(r=>r.ok), verif = reponses.some(r=>r.verif);
+  suivre('resultat');
+  regler(niveau());
+  montrer('fin', `${RETOUR}
+    <h2>${!ok ? 'Un point reste à vérifier ensemble.' : verif ? 'Votre activité correspond à cette aide.' : 'Votre site coche toutes les cases.'}</h2>
+    ${ok ? `<ul class="faits">${C.faits.map(f=>`<li><b>${esc(f[0])}</b><span>${esc(f[1])}</span></li>`).join('')}</ul>${verif?`<p class="note">La configuration de votre bâtiment sera étudiée sur place par le technicien.</p>`:''}`
+         : `<p class="chapo">D'après vos réponses, cette aide ne s'applique peut-être pas telle quelle. Deux minutes au téléphone suffisent pour le savoir.</p>`}
+    ${CONNU ? '' : `<label for="soc">Votre entreprise</label><input id="soc" autocomplete="organization" maxlength="80">
+                 <label for="tel">Votre numéro</label><input id="tel" type="tel" inputmode="tel" autocomplete="tel" maxlength="20" placeholder="06 90 00 00 00">`}
+    <p class="erreur" id="err" role="alert"></p>
+    <div class="bas${CONNU?'':' libre'}">
+      <button class="btn plein" id="rappel">Rappelez-moi</button>
+      <button class="lien" id="refus">Pas intéressé</button>
+    </div>`);
+  $('retour').onclick = () => question(C.questions.length-1);
+  $('rappel').onclick = async () => {
+    const plus = {};
+    if(!CONNU){
+      const tel = $('tel').value.replace(/[^\d+]/g,''), soc = $('soc').value.trim();
+      if(tel.replace(/\D/g,'').length < 9){ $('err').textContent = 'Indiquez un numéro où vous joindre.'; $('tel').focus(); return; }
+      plus.tel = tel; plus.societe = soc || null;
+    }
+    $('rappel').disabled = true; $('rappel').textContent = 'Envoi…';
+    try{ await envoyer('rappel', plus); merci(); }
+    catch(e){ $('rappel').disabled=false; $('rappel').textContent='Rappelez-moi';
+      $('err').innerHTML = `La demande n'est pas partie (réseau). Réessayez, ou appelez ${esc(REGLAGES.contact)} au <a href="tel:${REGLAGES.telephone}">${REGLAGES.telAffiche}</a>.`; }
+  };
+  $('refus').onclick = () => { envoyer('refus').catch(()=>{}); adieu('refus'); };
+}
+
+function merci(){
+  const d = document.createElement('div'); d.className = 'merci'; d.setAttribute('role','status');
+  d.innerHTML = `<div class="merci-in">
+    <svg class="rond" viewBox="0 0 112 112" aria-hidden="true"><circle cx="56" cy="56" r="48" fill="none" stroke="var(--accent)" stroke-width="5" stroke-linecap="round" transform="rotate(-90 56 56)"/><path d="M35 58l15 15 28-31" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    <h2 tabindex="-1">Merci pour votre confiance.</h2>
+    <p><strong>${esc(REGLAGES.contact)}</strong> vous rappelle dans les plus brefs délais${CONNU?', sur ce numéro':''}.</p>
+    <a href="tel:${REGLAGES.telephone}">Ou appelez-le : ${REGLAGES.telAffiche}</a>
+    <div class="sceau"><svg width="20" height="20" viewBox="0 0 22 22" aria-hidden="true"><circle cx="11" cy="11" r="10" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M6.2 11.4l3.1 3.1 6.4-6.8" fill="none" stroke="var(--accent)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Partenaire des certificats d'économies d'énergie</span></div>
+  </div>`;
+  const fond = $('photo').getAttribute('src');
+  if(fond) d.style.background = `linear-gradient(rgba(14,18,21,.84),rgba(14,18,21,.93)),url("${fond}") center/cover`;
+  (document.querySelector('.place')||document.body).appendChild(d);
+  d.querySelector('h2').focus({preventScroll:true});
+}
+
+function adieu(type){
+  montrer('fin', `
+    <h2>${type==='stop' ? 'Vous ne recevrez plus nos offres.' : 'Bien noté, nous ne vous relançons pas sur cette aide.'}</h2>
+    <p class="chapo">Si vous changez d'avis, ${esc(REGLAGES.contact)} reste joignable.</p>
+    <div class="bas"><a class="appel" href="tel:${REGLAGES.telephone}">${REGLAGES.telAffiche}</a></div>`);
+}
+
+// le manomètre répond au doigt : un petit coup de pompe
+$('mano').addEventListener('click', () => {
+  const m = $('mano'); m.classList.remove('pschitt'); void m.offsetWidth; m.classList.add('pschitt');
+  const sens = M.valeurs[1]>M.valeurs[0]?1:-1, base = valeur;
+  $('aiguille').style.transform = `rotate(${angle(base + sens*(M.max-M.min)*.09)}deg)`;
+  setTimeout(() => { if(valeur===base) $('aiguille').style.transform = `rotate(${angle(base)}deg)`; }, 380);
+});
+
+function pied(){
+  $('pied').innerHTML = `Aide ${esc(C.code)} du dispositif des certificats d'économies d'énergie, proposée par ${esc(REGLAGES.signature)}, sous réserve d'éligibilité de votre site. Visuels d'illustration.
+    ${CONNU?` Vous recevez ce message car nous avons déjà réalisé des travaux d'économies d'énergie chez vous. <button id="stop">Ne plus recevoir nos offres</button>`:''}`;
+  if($('stop')) $('stop').onclick = () => { envoyer('stop').catch(()=>{}); adieu('stop'); };
+}
+
+function demarrer(){
+  C = CAMPAGNES[NOMC]; M = C.mano; reponses = [];
+  document.body.dataset.theme = NOMC;
+  document.querySelectorAll('.merci').forEach(x=>x.remove());
+  cadran(); decor(); pied(); accueil();
+}
+
+if(APERCU){
+  document.body.classList.add('apercu');
+  const opts = () => CAMPAGNES[NOMC].metiers.map(m=>`<option value="${m}"${m===SEG?' selected':''}>${METIERS[m]}</option>`).join('');
+  $('apercu').innerHTML = `<div class="apercu"><b>Aperçu du métier</b>
+    <select id="ap_t" aria-label="Métier">${opts()}</select></div>`;
+  const noms = {garage:'Garage Dupont',autoecole:'Auto-école du Moule',lavage:'Lavage Express 971',industrie:'Scierie Bois des Îles',commerce:'Supérette du Bourg',hotel:'Hôtel Les Alizés',camping:'Camping de la Plage',concession:'Auto Caraïbes Distribution',scierie:'Scierie du Maroni',agricole:'EARL Les Hauts',defaut:'SARL Exemple'};
+  CLIENT.nom = noms[SEG];
+  $('ap_t').onchange = e => { SEG=e.target.value; CLIENT.nom=noms[SEG]; CLIENT.ville=''; demarrer(); };
+}
+demarrer();
+signalerOuverture();
+</script>
+</body>
+</html>
